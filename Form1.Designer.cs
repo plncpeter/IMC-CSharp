@@ -38,20 +38,26 @@
             this.txbN1 = new System.Windows.Forms.TextBox();
             this.txbN2 = new System.Windows.Forms.TextBox();
             this.btnCalcular = new System.Windows.Forms.Button();
+            this.lblConfirmacao1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Location = new System.Drawing.Point(68, 31);
+            this.lblTitulo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblTitulo.Font = new System.Drawing.Font("Humanst521 BT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.Chocolate;
+            this.lblTitulo.Location = new System.Drawing.Point(38, 38);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(84, 13);
+            this.lblTitulo.Size = new System.Drawing.Size(150, 27);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Calcule seu IMC";
             // 
             // lblNome1
             // 
             this.lblNome1.AutoSize = true;
+            this.lblNome1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome1.ForeColor = System.Drawing.Color.CadetBlue;
             this.lblNome1.Location = new System.Drawing.Point(28, 114);
             this.lblNome1.Name = "lblNome1";
             this.lblNome1.Size = new System.Drawing.Size(31, 13);
@@ -61,6 +67,7 @@
             // lblNome2
             // 
             this.lblNome2.AutoSize = true;
+            this.lblNome2.ForeColor = System.Drawing.Color.CadetBlue;
             this.lblNome2.Location = new System.Drawing.Point(28, 227);
             this.lblNome2.Name = "lblNome2";
             this.lblNome2.Size = new System.Drawing.Size(34, 13);
@@ -71,29 +78,33 @@
             // lblNome3
             // 
             this.lblNome3.AutoSize = true;
-            this.lblNome3.Location = new System.Drawing.Point(28, 342);
+            this.lblNome3.Font = new System.Drawing.Font("Humanst521 BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome3.ForeColor = System.Drawing.Color.CadetBlue;
+            this.lblNome3.Location = new System.Drawing.Point(27, 342);
             this.lblNome3.Name = "lblNome3";
-            this.lblNome3.Size = new System.Drawing.Size(26, 13);
+            this.lblNome3.Size = new System.Drawing.Size(37, 19);
             this.lblNome3.TabIndex = 3;
             this.lblNome3.Text = "IMC";
             // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(157, 342);
+            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultado.ForeColor = System.Drawing.Color.CadetBlue;
+            this.lblResultado.Location = new System.Drawing.Point(146, 341);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(29, 13);
+            this.lblResultado.Size = new System.Drawing.Size(40, 20);
             this.lblResultado.TabIndex = 4;
             this.lblResultado.Text = "NaN";
             // 
             // lblConfirmacao
             // 
             this.lblConfirmacao.AutoSize = true;
-            this.lblConfirmacao.Font = new System.Drawing.Font("HoloLens MDL2 Assets", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfirmacao.Font = new System.Drawing.Font("Humanst521 BT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConfirmacao.ForeColor = System.Drawing.Color.Chocolate;
-            this.lblConfirmacao.Location = new System.Drawing.Point(27, 404);
+            this.lblConfirmacao.Location = new System.Drawing.Point(26, 389);
             this.lblConfirmacao.Name = "lblConfirmacao";
-            this.lblConfirmacao.Size = new System.Drawing.Size(68, 21);
+            this.lblConfirmacao.Size = new System.Drawing.Size(81, 25);
             this.lblConfirmacao.TabIndex = 5;
             this.lblConfirmacao.Text = "Situação";
             // 
@@ -121,12 +132,22 @@
             this.btnCalcular.UseVisualStyleBackColor = true;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
+            // lblConfirmacao1
+            // 
+            this.lblConfirmacao1.AutoSize = true;
+            this.lblConfirmacao1.Font = new System.Drawing.Font("Humanst521 BT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfirmacao1.Location = new System.Drawing.Point(71, 425);
+            this.lblConfirmacao1.Name = "lblConfirmacao1";
+            this.lblConfirmacao1.Size = new System.Drawing.Size(0, 25);
+            this.lblConfirmacao1.TabIndex = 10;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(231, 459);
+            this.ClientSize = new System.Drawing.Size(225, 459);
+            this.Controls.Add(this.lblConfirmacao1);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.txbN2);
             this.Controls.Add(this.txbN1);
@@ -136,8 +157,9 @@
             this.Controls.Add(this.lblNome2);
             this.Controls.Add(this.lblNome1);
             this.Controls.Add(this.lblTitulo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "IMC ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -155,6 +177,7 @@
         private System.Windows.Forms.TextBox txbN1;
         private System.Windows.Forms.TextBox txbN2;
         private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Label lblConfirmacao1;
     }
 }
 

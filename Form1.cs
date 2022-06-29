@@ -50,37 +50,45 @@ namespace A4
             if (double.Parse(lblResultado.Text) <= 18.5)
             {
                 lblConfirmacao.Text = "Abaixo do peso";
-                lblConfirmacao.ForeColor = Color.Red;
+                lblConfirmacao.ForeColor = Color.Tomato;
+                lblConfirmacao1.Text = "";
             }
             else if (double.Parse(lblResultado.Text) >= 18.6 && (double.Parse(lblResultado.Text) <= 24.9))
             {
                 lblConfirmacao.Text = "Peso Ideal";
-                lblConfirmacao.ForeColor = Color.Green;
+                lblConfirmacao.ForeColor = Color.OliveDrab;
+                lblConfirmacao1.Text = "";
             }
             else if (double.Parse(lblResultado.Text) >= 25 && (double.Parse(lblResultado.Text) <= 29.9))
             {
-                lblConfirmacao.Text = "Levemente acima do peso";
-                lblConfirmacao.ForeColor = Color.Yellow;
+                lblConfirmacao.Text = "Levemente acima";
+                lblConfirmacao1.Text = "do Peso";
+                lblConfirmacao.ForeColor = Color.Goldenrod;
+                lblConfirmacao1.ForeColor = Color.Goldenrod;
             }
             else if (double.Parse(lblResultado.Text) >= 30 && (double.Parse(lblResultado.Text) <= 34.9))
             {
                 lblConfirmacao.Text = "Obesidade Grau 1";
-                lblConfirmacao.ForeColor = Color.Red;
+                lblConfirmacao.ForeColor = Color.Tomato;
+                lblConfirmacao1.Text = "";
             }
             else if (double.Parse(lblResultado.Text) >= 35 && (double.Parse(lblResultado.Text) <= 39.9))
             {
                 lblConfirmacao.Text = "Obesidade Grau 2";
-                lblConfirmacao.ForeColor = Color.Red;
+                lblConfirmacao.ForeColor = Color.Tomato;
+                lblConfirmacao1.Text = "";
             }
             else if (double.Parse(lblResultado.Text) >= 40)
             {
                 lblConfirmacao.Text = "Obesidade Grau 3";
-                lblConfirmacao.ForeColor = Color.Red;
+                lblConfirmacao.ForeColor = Color.Tomato;
+                lblConfirmacao1.Text = "";
             }
             else
             {
                 lblConfirmacao.Text = "Verifique os dados";
                 lblConfirmacao.ForeColor = Color.Chocolate;
+                lblConfirmacao1.Text = "";
             }
         }
     }
